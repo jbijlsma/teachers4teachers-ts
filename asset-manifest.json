@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/teachers4teachers-ts/static/css/main.cf36c721.chunk.css",
+    "main.js": "/teachers4teachers-ts/static/js/main.24cc51d3.chunk.js",
+    "main.js.map": "/teachers4teachers-ts/static/js/main.24cc51d3.chunk.js.map",
+    "runtime-main.js": "/teachers4teachers-ts/static/js/runtime-main.73d7a21a.js",
+    "runtime-main.js.map": "/teachers4teachers-ts/static/js/runtime-main.73d7a21a.js.map",
+    "static/css/2.81c862be.chunk.css": "/teachers4teachers-ts/static/css/2.81c862be.chunk.css",
+    "static/js/2.085b8cdc.chunk.js": "/teachers4teachers-ts/static/js/2.085b8cdc.chunk.js",
+    "static/js/2.085b8cdc.chunk.js.map": "/teachers4teachers-ts/static/js/2.085b8cdc.chunk.js.map",
+    "index.html": "/teachers4teachers-ts/index.html",
+    "static/css/2.81c862be.chunk.css.map": "/teachers4teachers-ts/static/css/2.81c862be.chunk.css.map",
+    "static/css/main.cf36c721.chunk.css.map": "/teachers4teachers-ts/static/css/main.cf36c721.chunk.css.map",
+    "static/js/2.085b8cdc.chunk.js.LICENSE.txt": "/teachers4teachers-ts/static/js/2.085b8cdc.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/teachers4teachers-ts/static/media/flags_responsive.266bf78d.png",
+    "static/media/primeicons.css": "/teachers4teachers-ts/static/media/primeicons.c6e20533.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.73d7a21a.js",
+    "static/css/2.81c862be.chunk.css",
+    "static/js/2.085b8cdc.chunk.js",
+    "static/css/main.cf36c721.chunk.css",
+    "static/js/main.24cc51d3.chunk.js"
+  ]
+}
