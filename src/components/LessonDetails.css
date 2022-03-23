@@ -1,0 +1,9 @@
+.submit-btn,
+.cancel-btn {
+  width: auto !important;
+  margin-right: 5px !important;
+}
+
+.input-btn-container {
+  margin-left: 10px;
+}
