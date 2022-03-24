@@ -28,7 +28,7 @@ const AppBreadcrumb = (props: any) => {
         : [{ label: activeRoute[0].parent }, { label: activeRoute[0].label }];
   }
 
-  const home = { icon: "pi pi-home", url: "/" };
+  const home = { icon: "pi pi-home", url: "#" };
 
   return (
     <div className="layout-breadcrumb-container flex justify-content-between align-items-center shadow-1">
