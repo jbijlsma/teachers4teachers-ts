@@ -7,16 +7,22 @@ import NotFound from "./pages/NotFound";
 import Access from "./pages/Access";
 import Landing from "./pages/Landing";
 
-import { useAppSelector } from "./store/hooks";
+import { useAppSelector, useAppDispatch } from "./store/hooks";
+import { init } from "./store";
 
 const AppWrapper = (props: any) => {
   const location = useLocation();
   const history = useHistory();
   const isLoggedIn = useAppSelector((state) => state.session.isLoggedIn);
+  const dispatch = useAppDispatch();
 
   // useEffect(() => {
   //   window.scrollTo(0, 0);
   // }, [location]);
+
+  useEffect(() => {
+    dispatch(init());
+  }, []);
 
   useEffect(() => {
     if (!isLoggedIn) {

@@ -30,6 +30,17 @@ const sessionSlice = createSlice({
     grade: "",
   },
   reducers: {
+    init(state) {
+      const sessionStateJson = localStorage.getItem("session");
+      if (sessionStateJson) {
+        const sessionState = JSON.parse(sessionStateJson);
+        state.email = sessionState.email;
+        state.fullName = sessionState.fullName;
+        state.photo = sessionState.photo;
+        state.title = sessionState.title;
+        state.isLoggedIn = true;
+      }
+    },
     login(state, action: PayloadAction<{ email: string; password: string }>) {
       const { email, password } = action.payload;
 
@@ -42,6 +53,8 @@ const sessionSlice = createSlice({
         state.photo = user.photo;
         state.title = user.title;
         state.isLoggedIn = true;
+
+        localStorage.setItem("session", JSON.stringify(user));
       } else {
         state.id = new Date().toISOString();
         state.loginError = "Invalid email and / or password";
@@ -53,11 +66,12 @@ const sessionSlice = createSlice({
       state.isLoggedIn = false;
       state.email = "";
       state.title = "";
+      localStorage.removeItem("session");
     },
   },
 });
 
-export const { login, logout } = sessionSlice.actions;
+export const { init, login, logout } = sessionSlice.actions;
 
 const lessonsSlice = createSlice({
   name: "lessons",
